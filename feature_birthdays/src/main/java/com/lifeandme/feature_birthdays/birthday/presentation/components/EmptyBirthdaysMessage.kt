@@ -25,7 +25,6 @@ fun EmptyBirthdaysMessage() {
             text = stringResource(R.string.empty_message),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
-            maxLines = 2,
         )
     }
 }
