@@ -91,11 +91,11 @@ Or open it directly in Android Studio:
 
 Dependencies (Gradle)
 
-implementation("androidx.compose.ui:ui:1.7.0")
-implementation("androidx.room:room-runtime:2.6.1")
-kapt("androidx.room:room-compiler:2.6.1")
-implementation("com.google.dagger:hilt-android:2.47")
-kapt("com.google.dagger:hilt-compiler:2.47") 
+implementation("androidx.compose.ui:ui:1.7.0")  
+implementation("androidx.room:room-runtime:2.6.1")  
+kapt("androidx.room:room-compiler:2.6.1")  
+implementation("com.google.dagger:hilt-android:2.47")  
+kapt("com.google.dagger:hilt-compiler:2.47")   
 
 
 ---
