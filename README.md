@@ -1,85 +1,95 @@
-🎂 تولد+ (Tavalod+)
+🎂 Tavalod+
 
-اپلیکیشن یادآور تولد با تقویم شمسی 🇮🇷 — ساخته‌شده با Kotlin و Jetpack Compose
-
-
----
-
-📱 معرفی پروژه
-
-یادروز یه اپلیکیشن مدرن و مینیمال برای ثبت و یادآوری تولد دوستان و عزیزانه.
-تمام تاریخ‌ها بر اساس تقویم شمسی ذخیره می‌شن و در روز تولد، اپ به‌صورت خودکار نوتیفیکیشن تبریک نمایش می‌ده.
-
-اپ با معماری Clean Architecture + MVVM طراحی شده و از جدیدترین کتابخانه‌های Jetpack استفاده می‌کنه.
+Persian Birthday Reminder App 🇮🇷 — Built with Kotlin & Jetpack Compose
 
 
 ---
 
-✨ ویژگی‌ها
+Overview
 
-📅 ثبت تولدها با تقویم شمسی
+Tavalod+ is a modern and minimal Android application designed to remind you of birthdays based on the Jalali (Persian) calendar.
+All dates are stored in the Solar Hijri system, and the app automatically sends birthday notifications on the right day.
 
-🔔 ارسال نوتیفیکیشن خودکار در روز تولد
+The project follows Clean Architecture + MVVM, built entirely with Kotlin and Jetpack Compose.
 
-♻️ بازتنظیم آلارم‌ها بعد از ریست گوشی (BootReceiver)
 
-🎨 رابط کاربری مدرن با Jetpack Compose
+---
 
-🧩 معماری تمیز با ماژول‌بندی (multi-module)
+Features
 
-💾 ذخیره‌سازی آفلاین با Room Database
+- Add and manage birthdays using the Persian (Jalali) calendar
 
-⚡ مدیریت وابستگی‌ها با Dagger Hilt
+- Automatic birthday notifications
 
-🧠 رعایت اصول SOLID و Best Practices
+- Alarm reset after device reboot (BootReceiver)
+
+- Modern UI built with Jetpack Compose
+
+- Multi-module Clean Architecture
+
+- Offline storage with Room Database
+
+- Dependency injection with Dagger Hilt
+
+- Follows SOLID principles and industry best practices
 
 
 
 ---
 
-🛠 تکنولوژی‌ها و کتابخانه‌ها
 
-بخش	ابزار
+Architecture
 
-زبان	Kotlin
+Clean Architecture + MVVM
+
+UI (Compose)
+   ↓
+ViewModel (Hilt)
+   ↓
+UseCase (Domain)
+   ↓
+Repository Interface
+   ↓
+Repository Implementation (Data)
+   ↓
+Room Database
+
+
+---
+
+Tech Stack
+
+Layer	Technology
+
+Language	Kotlin
 UI	Jetpack Compose
-DI	Dagger Hilt
+Dependency Injection	Dagger Hilt
 Database	Room
-Async	Kotlin Coroutines + Flow
-Architecture	Clean + MVVM
-Calendar	PersianDate  
-Notification	AlarmManager + NotificationManager
+Async	Coroutines + Flow
+Architecture	Clean Architecture + MVVM
+Calendar	PersianDate 
+Notifications	AlarmManager + NotificationManager
 
 
 
 ---
 
-🖼 پیش‌نمایش
-
-صفحه اصلی	افزودن تولد	نوتیفیکیشن
-
-		
-
-
-
----
-
-⚙️ نصب و اجرا
+How to Run
 
 git clone https://github.com/<YOUR_USERNAME>/BirthdaysApp.git
 cd BirthdaysApp
 ./gradlew assembleDebug
 
-یا مستقیماً در Android Studio:
+Or open it directly in Android Studio:
 
-> File → Open → پوشه پروژه → Run ▶️
+> File → Open → select the project folder → Run ▶️
 
 
 
 
 ---
 
-📦 وابستگی‌ها (Gradle)
+Dependencies (Gradle)
 
 implementation("androidx.compose.ui:ui:1.7.0")
 implementation("androidx.room:room-runtime:2.6.1")
@@ -90,23 +100,28 @@ kapt("com.google.dagger:hilt-compiler:2.47")
 
 ---
 
-💡 نکات توسعه
+Development Notes
 
-همه‌ی کلاس‌های تزریقی باید با @HiltViewModel, @AndroidEntryPoint, یا EntryPointAccessors علامت‌گذاری بشن.
+All injectable classes are annotated with @HiltViewModel, @AndroidEntryPoint, or use EntryPointAccessors.
 
-آلارم‌ها بعد از هر بوت دوباره تنظیم می‌شن (BootReceiver).
+Alarms are re-scheduled automatically after device reboot (BootReceiver).
 
-فقط تاریخ‌های شمسی معتبر پذیرفته می‌شن.
+Only valid Persian (Jalali) dates are accepted.
 
 
 
 ---
 
-🪪 لایسنس
+Developer
 
-این پروژه تحت مجوز MIT License منتشر شده است.
+Hassan Ghasemzadeh
+Android Developer | Kotlin | Clean Architecture
+📧 hghasemzadeh38@gmail.com
 
+
+---
+
+License
+
+This project is licensed under the MIT License. 
 © 2025 Tavalod+ — All rights reserved.
-
-
----
