@@ -2,6 +2,7 @@ package com.lifeandme.feature_birthdays.birthday.presentation.components
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -22,9 +23,11 @@ fun EmptyBirthdaysMessage() {
         contentAlignment = Alignment.Center
     ) {
         Text(
+            modifier = Modifier.fillMaxWidth(),
             text = stringResource(R.string.empty_message),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
+            maxLines = 2,
         )
     }
 }
