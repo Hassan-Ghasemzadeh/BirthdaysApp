@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="birthday_history">تاریخ های تولد</string>
+    <string name="empty_message">لیست تولدها خالی است. برای افزودن، دکمه \'+\' را بزنید.</string>
+    <string name="add_birthday">اضافه کردن تولد</string>
+    <string name="name">نام</string>
+    <string name="year">سال (شمسی)</string>
+    <string name="month">ماه</string>
+    <string name="day">روز</string>
+    <string name="hour">ساعت</string>
+    <string name="minute">دقیقه</string>
+    <string name="save_birthday">ذخیره</string>
+    <string name="user_input_validation_message">تاریخ وارد شده معتبر نیست</string>
+</resources>

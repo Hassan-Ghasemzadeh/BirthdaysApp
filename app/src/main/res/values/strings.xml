@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tavalod+</string>
+    <string name="birthday_notification_title">تولد %1$s 🎂🎉</string>
+    <string name="birthday_notification_content">امروز تولد %1$s است — تبریک بگویید!</string>
+</resources>
